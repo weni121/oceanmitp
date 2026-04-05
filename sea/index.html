@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> oceanmi</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bubbles-bg" id="bubbles"></div>
+
+<div id="app">
+  <div class="site-header">
+    <div class="lab-tag">DEEP SEA RESEARCH INSTITUTE · LAB-7743</div>
+    <h1>ถ้าเจ้าเป็น<span>สัตว์น้ำ</span><br>เจ้าจะเป็นตัวไหน?</h1>
+  </div>
+
+  <!-- หน้าแชทคำถาม -->
+  <div id="screen-chat" class="screen active">
+    <div class="progress-wrap">
+      <div class="progress-track">
+        <div class="progress-fill" id="prog"></div>
+      </div>
+      <div class="progress-num" id="prog-num">0 / 15</div>
+    </div>
+    <div class="chat-log" id="chat-log"></div>
+    <div class="choices-area" id="choices"></div>
+  </div>
+
+  <!-- หน้าผลลัพธ์ -->
+  <div class="result-wrap">
+  <div class="result-card" id="result-card"></div>
+  <div class="btn-row">
+    <button class="action-btn" onclick="restart()">🔄 เริ่มใหม่</button>
+    <a href="creatures.html" class="action-btn">🐙 ข้อมูลสัตว์น้ำตัวอื่น</a>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>
